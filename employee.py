@@ -69,9 +69,9 @@ class EmployeeClass:
         employeedob = Label(root, text="D.O.B", fg="black", bg="white").place(x=340, y=300)
         employeedoj = Label(root, text="D.O.J", fg="black", bg="white").place(x=600, y=300)
 
-        name = Entry(root, textvariable="self.var_name", fg="black", bg="yellow").place(x=150, y=300,width=150)
-        dateofbirth = Entry(root, textvariable="self.var_DOB", fg="black", bg="yellow").place(x=400, y=300,width=150)
-        dateofjoining = Entry(root, textvariable="self.var_DOJ", fg="black", bg="yellow").place(x=700, y=300,width=150)
+        name = Entry(root, textvariable=self.var_name_, fg="black", bg="yellow").place(x=150, y=300,width=150)
+        dateofbirth = Entry(root, textvariable=self.var_DOB, fg="black", bg="yellow").place(x=400, y=300,width=150)
+        dateofjoining = Entry(root, textvariable=self.var_DOJ, fg="black", bg="yellow").place(x=700, y=300,width=150)
 
 
 #row3
@@ -80,8 +80,8 @@ class EmployeeClass:
         employeepass = Label(root, text="pass", fg="black", bg="white").place(x=340, y=350)
         employeeutype = Label(root, text="U-type", fg="black", bg="white").place(x=600, y=350)
 
-        email = Entry(root, textvariable="self.var_email", fg="black", bg="yellow").place(x=150, y=350, width=150)
-        password = Entry(root, textvariable="self.var_password", fg="black", bg="yellow").place(x=400, y=350, width=150)
+        email = Entry(root, textvariable=self.var_email, fg="black", bg="yellow").place(x=150, y=350, width=150)
+        password = Entry(root, textvariable=self.var_password, fg="black", bg="yellow").place(x=400, y=350, width=150)
         combobox_utype = ttk.Combobox(root, values=("select", "admin", "employee"),
                                        textvariable=self.var_utype, state="readonly", justify="center")
         combobox_utype.place(x=700 ,y=350, width=180)
@@ -92,8 +92,8 @@ class EmployeeClass:
         label_address = Label(root, text="address", fg="black", bg="white").place(x=0, y=400)
         label_salary = Label(root, text="salary", fg="black", bg="white").place(x=500, y=400)
 
-        txt_address = Text(root,  fg="black", bg="yellow").place(x=150, y=400, width=250,height=100)
-        txt_salary =  Entry(root,  fg="black", bg="yellow").place(x=600, y=400, width=150)
+        txt_address = Entry(root,  fg="black", bg="yellow",textvariable=self.var_address).place(x=150, y=400, width=250,height=100)
+        txt_salary =  Entry(root,  fg="black", bg="yellow",textvariable=self.var_salary).place(x=600, y=400, width=150)
 
         # buttons
 
@@ -108,7 +108,7 @@ class EmployeeClass:
         scrolly=Scrollbar(emp_frame,orient=VERTICAL)
         scrollx=Scrollbar(emp_frame,orient=HORIZONTAL)
 
-        self.EmployeeTable=ttk.Treeview(emp_frame,columns=("emp_id","name","email","gender","contact","dob","salary","address","pass","utype","dob","doj"),yscrollcommand=scrolly.set,xscrollcommand=scrollx.set)
+        self.EmployeeTable=ttk.Treeview(emp_frame,columns=("emp_id","name","email","gender","contact","salary","address","pass","utype","dob","doj"),yscrollcommand=scrolly.set,xscrollcommand=scrollx.set)
         scrollx.pack(side=BOTTOM,fill=X)
         scrolly.pack(side=RIGHT,fill=Y)
         scrollx.config(command=self.EmployeeTable.xview)
@@ -119,23 +119,25 @@ class EmployeeClass:
         self.EmployeeTable.heading("email"  ,text= "email" )
         self.EmployeeTable.heading("utype"  ,text="utype" )
         self.EmployeeTable.heading("contact",text="phnno")
+        self.EmployeeTable.heading("salary", text="salary")
         self.EmployeeTable.heading("address",text="address")
         self.EmployeeTable.heading("gender" ,text="gender")
-        self.EmployeeTable.heading("pass"   ,text="pass")
-        self.EmployeeTable.heading("dob"    ,text="dob")
-        self.EmployeeTable.heading("doj"    ,text="doj")
+        self.EmployeeTable.heading("pass",text="pass")
+        self.EmployeeTable.heading("dob" ,text="dob")
+        self.EmployeeTable.heading("doj",text="doj")
         self.EmployeeTable["show"]="headings"
 
         self.EmployeeTable.column("emp_id",width=90)
-        self.EmployeeTable.column("name" )
-        self.EmployeeTable.column("email" )
-        self.EmployeeTable.column("utype")
-        self.EmployeeTable.column("contact" )
-        self.EmployeeTable.column("address")
-        self.EmployeeTable.column("gender" )
-        self.EmployeeTable.column("pass" )
-        self.EmployeeTable.column("dob" )
-        self.EmployeeTable.column("doj" )
+        self.EmployeeTable.column("name" ,width=90)
+        self.EmployeeTable.column("email" ,width=90)
+        self.EmployeeTable.column("utype",width=90)
+        self.EmployeeTable.column("contact",width=90 )
+        self.EmployeeTable.column("salary", width=90)
+        self.EmployeeTable.column("address",width=90)
+        self.EmployeeTable.column("gender",width=90 )
+        self.EmployeeTable.column("pass" ,width=90)
+        self.EmployeeTable.column("dob",width=90 )
+        self.EmployeeTable.column("doj",width=90 )
         # self.EmployeeTable["show"] = "column"
         # self.EmployeeTable.bind("<But     tonRelease-1>",self.get_data)
 
