@@ -19,11 +19,20 @@ data validation, and graphical user interface (GUI) for better usability.
 
 
 
-<img width="1680" alt="Screenshot 2024-08-31 at 6 04 10 PM" src="https://github.com/user-attachments/assets/be36c913-1ba1-4fed-b43b-046adc63b395">
+<img width="1680" alt="Screenshot 2024-08-31 at 6 13 35 PM" src="https://github.com/user-attachments/assets/12ed1be1-2f77-417c-9c42-6b463cb98f48">
+
 
 
 
 ![image](https://github.com/user-attachments/assets/ae383248-e620-46f6-9bc7-2adc8f3e9ac6)
+
+
+<img width="1680" alt="Screenshot 2024-08-31 at 6 14 00 PM" src="https://github.com/user-attachments/assets/0da9b2f7-3e1a-43ab-b643-289aebce78fa">
+
+
+<img width="1680" alt="Screenshot 2024-08-31 at 6 14 40 PM" src="https://github.com/user-attachments/assets/d983148e-ecbd-4be8-b6ab-4356cb16a686">
+
+
 
 
 
