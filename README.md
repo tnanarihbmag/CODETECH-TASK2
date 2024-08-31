@@ -18,3 +18,6 @@ such as low- stock alerts or sales summaries. Implement features like user authe
 data validation, and graphical user interface (GUI) for better usability.
 
 
+
+<img width="1680" alt="Screenshot 2024-08-31 at 6 04 10 PM" src="https://github.com/user-attachments/assets/be36c913-1ba1-4fed-b43b-046adc63b395">
+
