@@ -23,6 +23,8 @@ data validation, and graphical user interface (GUI) for better usability.
 
 
 
-<img width="1680" alt="Screenshot 2024-08-31 at 6 10 49 PM" src="https://github.com/user-attachments/assets/7a1af4eb-878c-4e14-821f-edf3f50937d1">
+![image](https://github.com/user-attachments/assets/ae383248-e620-46f6-9bc7-2adc8f3e9ac6)
+
+
 
 
