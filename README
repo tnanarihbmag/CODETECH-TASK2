@@ -4,6 +4,7 @@ DOMAIN: PYTHON PROGRAMMING
 DURATION:AUGUST TO SEPTEMBER 2024
 
 
+
 OVERVIEW OF THE PROJECT
 Project: INVENTORY MANAGEMENT SYSTEM
 OBJECTIVE
@@ -15,4 +16,5 @@ KEY ACTIVITIES
 allow users to add, edit, and delete products, track inventory levels, and generate reports
 such as low- stock alerts or sales summaries. Implement features like user authentication,
 data validation, and graphical user interface (GUI) for better usability.
+
 
